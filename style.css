@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
 
+
+
+/* FOREMOST */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
 
 }
 
@@ -23,6 +27,7 @@
         rgb(98 189 252) 100%
     );
     --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    --shadowSupport : 0px 20px 20px 0px rgb(132 144 255 / 30%);
 }
 
 html{
@@ -31,7 +36,7 @@ html{
 }
 
 h1,h2,h3,h4{
-    font-family: "popins", sans-sarif;
+    font-family: 'Poppins', sans-serif;
 }
 
 li{
@@ -59,3 +64,126 @@ p{
     font-size: 1.7rem;
 }
 
+
+/* HEADER */
+
+header{
+    padding: 0 4.8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    height: 6rem;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 4.6rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;   /* You cant use padding etc.. */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    transition: all 0.2s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active{
+    color: var(--helper);
+}
+
+
+/*-------------- HERO SEC START --------------*/
+
+/* REUSABLE HERO CSS */
+
+.section{
+    padding: 9rem 0;
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    gap: 5rem;
+}
+
+.grid-two-column{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.btn{
+    background: var(--gradientSupport);
+    padding: 1.6rem 3.2rem;
+    border:none;
+    color: var(--helper-tint);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    /* WEBKIT FOR SUPPORT ALL MODERN BROWSERS [ANIMATION,SCALING,TRANSITION ETC] */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition:  all 0.3s ease; 
+    -o-transition:  all 0.3s ease;
+
+}
+
+.btn:hover, 
+.btn:active{
+    box-shadow: var(--shadowSupport);
+}
+
+
+/* HERO MAIN SEC */
+
+.section-hero-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 7rem;
+
+    /* align-items: flex-start; */
+}
+
+.hero-top-data{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--helper);
+}
+
+.hero-heading{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6.5rem;
+}
+
+.hero-para{
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.hero-img{
+    max-width: 75%;
+}
+
+.section-hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
