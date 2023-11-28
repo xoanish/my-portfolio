@@ -62,7 +62,7 @@ p{
 }
 
 
-/*--------------------------------------- HEADER -----------------------------------------*/
+/*---------------------------------------  HEADER  -----------------------------------------*/
 
 header{
     padding: 0 4.8rem;
@@ -121,6 +121,15 @@ header{
     grid-template-columns: repeat(2,1fr);
 }
 
+.grid-three-column{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-column{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
 .btn{
     background: var(--gradientSupport);
     padding: 1.6rem 3.2rem;
@@ -142,6 +151,8 @@ header{
 .btn:hover, 
 .btn:active{
     box-shadow: var(--shadowSupport);
+    transform: translateY(-1rem);
+
 }
 
 .heading2{
@@ -283,6 +294,7 @@ header{
 
 /*----------------------- BIO Span ----------------------------- */
 
+
 .bio-prog-bar span{
     position:absolute;
     top: 1.5rem;
@@ -328,4 +340,79 @@ header{
     border-color: transparent;
     border-bottom-color: var(--helper);
     top: -1.6rem;
+}
+
+/* =========================================
+                LATEST WORK
+=============================================*/ 
+
+.section-portfolio{
+    transition: all 0.7s linear;
+}
+
+.section-portfolio p{
+    max-width: 60rem;
+}
+
+.p-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    margin: 6.4rem 0;
+
+}
+
+.protfolio-images {
+    gap: 3.2rem;
+}
+
+
+.portfolio-images img { 
+    width: 90%;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay .overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(
+         to right,
+         #717ffb , 
+         #5ebbfd);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    border-radius: 7px;
+}
+
+.image-overlay:hover > .overlay{
+    transform: translateY(0);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.image-overlay .heading2{
+    color: #fff;
+    margin: 0;
+}
+
+.p-btn:hover{
+    transform: translateY(-1rem);
+}
+
+.p-btn-active{
+    transform: translateY(-1rem);
 }
