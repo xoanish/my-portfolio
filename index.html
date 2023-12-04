@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./index.js" ></script>
+
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
 </head>
 
 <body>
@@ -43,16 +44,20 @@
                         <a href="#" class="btn hire-me-btn">Hire Me</a>
                     </div>
                 </div>
+
+                <!--============================ HERO SEC RIGHT SIDE =========================== -->
+
+
+                <div class="section-hero-image">
+                    <img src="./pics/Hero-sec-image2.jpg" alt="hero image" class="hero-img" />
+                </div>
+            </div>
     </main>
-    <!-- HERO SEC RIGHT SIDE -->
-    <div class="section-hero-image">
-        <img src="./pics/Hero-sec-image2.jpg" alt="hero image" class="hero-img" />
-    </div>
-    </div>
     </section>
 
     <section class="section-bio section">
         <div class="container grid grid-two-column">
+
             <!-- BIO LEFT SIDE. -->
             <div class="bio-image">
                 <img src="./pics/bio-img.jpg" alt="bio-data-pic" class="bio-img" />
@@ -124,7 +129,7 @@
         <div class="p-btns">
             <div class="btn p-btn" data-btn-num="1">Websites</div>
             <div class="btn p-btn" data-btn-num="2">Apps</div>
-            <div class="btn p-btn" data-btn-num="2">Photoshop</div>
+            <div class="btn p-btn" data-btn-num="3">Photoshop</div>
         </div>
 
 
@@ -134,32 +139,97 @@
             <div class="image-overlay p-btn--1">
                 <img src="./pics/my wrk/1st.jpg" alt="my works" />
                 <div class="overlay">
-                <h2 class="heading2">Project 1</h2>
+                    <a href="#" class="heading2">Project 1</a>
                 </div>
             </div>
 
-            <div class="image-overlay p-btn--1">
+            <div class="image-overlay p-btn--2 ">
+                <img src="./pics/my wrk/2nd.jpg" alt="my works" />
+                <div class="overlay">
+                    <a href="#" class="heading2">project 2</a>
+                </div>
+            </div>
+
+            <div class="image-overlay p-btn--3  ">
                 <img src="./pics/my wrk/3rd.jpg" alt="my works" />
                 <div class="overlay">
-                <h2 class="heading2">Project 2</h2>
+                    <a href="#" class="heading2">project 3</a>
                 </div>
             </div>
 
-            <div class="image-overlay p-btn--1">
-                <img src="./pics/my wrk/1st.jpg" alt="my works"/>
-                <div class="overlay">
-                <h2 class="heading2">project 3</h2>
-                </div>             
-            </div>
-
-
         </div>
-
     </section>
 
+    <!-- =========================== Work Counter SEC. ======================================== -->
+
+    <section class="section section-work-data">
+        <div class="container grid grid-four-column">
+
+            <div>
+                <h2 class="counter-numbers">100+</h2>
+                <p>project completed</p>
+            </div>
+
+            <div>
+                <h2 class="counter-numbers">50+</h2>
+                <p>App completed</p>
+            </div>
+
+            <div>
+                <h2 class="counter-numbers">2000</h2>
+                <p>Coffes</p>
+            </div>
+
+            <div>
+                <h2 class="counter-numbers">2000</h2>
+                <p>project completed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== Best Project ==================================================== -->
+
+    <div class="section section-best-projects">
+        <div class="container">
+            <h2 class="heading2">Best Projects</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content
+                of a page when looking at its layout.</p>
+        </div>
+    </div>
+
+    <!-- =========================== Projects Card ======================-->
+
+    <div class="container grid grid-three-column">
+        <div class="service-box">
+            <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
+            <h3>Web Design</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content
+                of a page when looking at its layout.</p>
+        </div>
+
+        <div class="service-box">
+            <ion-icon name="camera-sharp" class="service-icon"></ion-icon>
+            <h3>Web Design</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content
+                of a page when looking at its layout.</p>
+        </div>
+
+        <div class="service-box">
+            <ion-icon name="logo-react" class="service-icon"></ion-icon>
+            <h3>Web Design</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content
+                of a page when looking at its layout.</p>
+        </div>
 
 
-    <script src="./index.js"></script>
+
+
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
