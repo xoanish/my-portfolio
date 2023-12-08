@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
 
-/* FOREMOST */
+/*============================================== REUSABLE ================================================*/
+
 
 * {
   margin: 0;
@@ -19,11 +20,9 @@
   --helper-tint: #f3f4ff;
   --bg: rgb(249 249 255);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, #62bdfc 100%);
-  --gradientSupport: -webkit-linear-gradient(
-    0deg,
-    rgb(132 144 255) 0%,
-    rgb(98 189 252) 100%
-  );
+  --gradientSupport: -webkit-linear-gradient(0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%);
   --shadow: 0px 0px 20px 0px rgb(132 144 255 / 50%);
   --shadowSupport: 0px 20px 20px 0px rgb(132 144 255 / 30%);
 }
@@ -89,7 +88,8 @@ header {
 
 .navbar-link:link,
 .navbar-link:visited {
-  display: inline-block; /* You cant use padding etc.. */
+  display: inline-block;
+  /* You cant use padding etc.. */
   font-size: 1.8rem;
   text-transform: uppercase;
   color: black;
@@ -274,12 +274,15 @@ header {
 .bio-prog2::before {
   width: 79%;
 }
+
 .bio-prog3::before {
   width: 74%;
 }
+
 .bio-prog4::before {
   width: 54%;
 }
+
 .bio-prog5::before {
   width: 76%;
 }
@@ -385,7 +388,7 @@ header {
   border-radius: 4px;
 }
 
-.image-overlay:hover > .overlay {
+.image-overlay:hover>.overlay {
   transform: translateY(0);
   opacity: 0.8;
   cursor: pointer;
@@ -497,32 +500,97 @@ header {
 }
 
 
- /* =============================== CONTACT SECTION ==================================  */
+/* =============================== CONTACT SECTION ==================================  */
 
- .section-contact-main{
-    max-width: 70rem;
-    margin: 0 auto;
-    margin-top: 9rem;
-    transition: all 0.3s linear;
- }
+.section-contact-main {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 9rem;
+  transition: all 0.3s linear;
+}
 
- .section-contact-main form{
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
- }
+.section-contact-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
- .section-contact-main input,
- .section-contact-main textarea{
-    padding: 1.5rem 2rem;
-    border: 0.1rem solid #c9c9c9;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-family: "work sans";
-    width: 100%;
- }
+.section-contact-main input,
+.section-contact-main textarea {
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: "work sans";
+  width: 100%;
+}
 
- .section-contact-main input[type="submit"]{
-    max-width: 30%;
-    border: none;
- }
+.section-contact-main input[type="submit"] {
+  max-width: 30%;
+  border: none;
+}
+
+
+/* =============================== Footer SEC. Start ==================================  */
+
+.footer {
+  margin-top: 9rem;
+  height: 30rem;
+  background-color: rgb(58, 56, 56);
+  color: #fff;
+}
+
+
+.f-links ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.f-services ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.inquires ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.f-headings {
+  font-weight: 400;
+  margin: 4rem 0 3rem 0;
+}
+
+.footer .footer-menu,
+a,
+p {
+  color: #fff;
+}
+
+.footer p {
+  font-size: 1.5rem;
+}
+
+.social-media ul{
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.5rem;
+  font-size: 3rem;
+}
+
+.social-media a{
+  transition: all 0.2s linear;
+}
+
+.social-media a:hover{
+  color: var(--helper);
+}
