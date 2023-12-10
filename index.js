@@ -25,3 +25,41 @@ p_btns.addEventListener("click", (e) => {
     img_active.forEach((curElem) => curElem.classList.remove("p-image-not-active"));
 });
 
+// ================================= SCROLL TO TOP ============================================
+    // GEtting FOOTER - Hero REFRENCE
+const footerElem = document.querySelector(".footer");
+const heroSec = document.querySelector(".section-hero")
+
+const scrollElement = document.createElement("div");
+scrollElement.classList.add("scroll-top");
+
+scrollElement.innerHTML = `<ion-icon name="arrow-up-circle-outline" class ="scroll-icon"></ion-icon>`;
+
+footerElem.after(scrollElement);
+
+const scrollTop = () =>{
+    heroSec.scrollIntoView({behavior:"smooth"})
+}
+
+scrollElement.addEventListener("click", scrollTop);
+
+
+// NUMBER ANIMATION ==========================================================================
+
+
+// const counterNum = document.querySelectorAll(".counter-numbers");
+
+// const speed = 200;
+
+// counterNum.forEach((curElem) => {
+
+//     const updateNumber = () => {
+//         const targetNumber = parseInt(curElem.dataset.number);
+//         // console.log(targetNumber);
+
+//         const initialNum = parseInt(curElem.innerText);
+//         console.log(initialNum);
+//     }
+
+//     updateNumber();
+// })

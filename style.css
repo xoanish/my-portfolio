@@ -93,7 +93,7 @@ header {
   font-size: 1.8rem;
   text-transform: uppercase;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.2s linear;
 }
 
@@ -106,13 +106,13 @@ header {
 
 /*--------------------------------- REUSABLE HERO ---------------------------------CSS */
 
-.section {
-  padding: 9rem 0;
-}
-
 .container {
   max-width: 140rem;
   margin: 0 auto;
+}
+
+.section{
+  padding: 9rem 0;
 }
 
 .grid {
@@ -195,7 +195,6 @@ header {
   /* align-items: center; */
   padding-left: 7rem;
 
-  /* align-items: flex-start; */
 }
 
 .hero-top-data {
@@ -431,6 +430,13 @@ header {
 
 /* ====================== Best Projects SeC ================================ */
 
+.section-work-data .grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25rem;
+}
+
 .section-service p {
   max-width: 60rem;
 }
@@ -463,6 +469,7 @@ header {
 
 .section-freelancing {
   height: 30rem;
+  margin: 9rem 0;
   background-image: url(./pics/freelancing.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -470,7 +477,6 @@ header {
   position: relative;
   transition: all 0.7s linear;
   text-align: center;
-  margin: 8rem 0;
   align-items: center;
 }
 
@@ -502,10 +508,14 @@ header {
 
 /* =============================== CONTACT SECTION ==================================  */
 
+.sec-contact{
+  margin: 5rem 0;
+}
+
 .section-contact-main {
   max-width: 70rem;
   margin: 0 auto;
-  margin-top: 9rem;
+  margin-top: 8rem;
   transition: all 0.3s linear;
 }
 
@@ -541,7 +551,7 @@ header {
 }
 
 
-.f-links ul {
+.f-links ul{
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
@@ -567,9 +577,15 @@ header {
   margin: 4rem 0 3rem 0;
 }
 
-.footer .footer-menu,
-a,
-p {
+.f-about p{
+  color: #fff;
+}
+
+.footer-menu{
+  color: #fff;
+}
+
+.f-headings a{
   color: #fff;
 }
 
@@ -577,7 +593,10 @@ p {
   font-size: 1.5rem;
 }
 
+
+
 .social-media ul{
+  color: #fff;
   margin: 3rem 0;
   display: flex;
   justify-content: center;
@@ -588,6 +607,7 @@ p {
 }
 
 .social-media a{
+  color: #fff;
   transition: all 0.2s linear;
 }
 
@@ -595,10 +615,33 @@ p {
   color: var(--helper);
 }
 
-.copyright p{
-  color: #fff;
+.copyright {
+  /* color: #fff; */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+}
+
+/* ======================================== Scrolling Icon ================================= */
+
+.scroll-top{
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 1;
+}
+
+.scroll-icon{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 200px 0px 200px 200px;
+  -webkit-border-radius: 200px 0px 200px 200px;
+  -moz-border-radius: 200px 0px 200px 200px;
+
+  background: linear-gradient(to right, #717ffb, #5ebbfd);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  color: var(--heading);
+  cursor: pointer;
 }
